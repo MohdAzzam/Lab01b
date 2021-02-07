@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <style>
+        main h1 {
+            background-color: gray;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="background-color:#1010;">
+    <header>
+        <nav>
+            <ol>
+                <li>Home</li>
+                <li>Category</li>
+                <li>About US</li>
+            </ol>
+        </nav>
+
+    </header>
+    <main>
+        <h1>Class 1 Lab</h1>
+
+        <h4 style="color: red;" id="userName"></h4>
+        <h4 style="color: black;" id="userAge"></h4>
+        <h4 style="color: red;" id="userFavMovie"></h4>
+        <h4 style="color: black;" id="userMobileKind"></h4>
+        <hr>
+        <p style="background-color: gray; color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eos expedita officiis, blanditiis eum corporis,
+            illo sequi asperiores debitis commodi vel explicabo et saepe perferendis voluptates omnis quos architecto
+            ratione.</p>
+        <p style="background-color: black; color: green;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsam ab explicabo, magni unde ex, autem
+            dolorum libero velit debitis porro deserunt sit et nobis doloribus ea reiciendis repellat. Explicabo.</p>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        var userName = prompt('What is your name');
+        var userAge = prompt('How old are You');
+        var userFavMovie = prompt('tell us your faivarate move');
+        var userMobileKind = prompt('What a kind of phone you hold');
+        console.log(userName);
+        console.log(userAge);
+        console.log(userFavMovie);
+        console.log(userMobileKind);
+        alert(`Welcome ${userName} Your Age is ${userAge} Your Fav Move is ${userFavMovie} and you hold a ${userMobileKind} Phone`);
+
+        document.getElementById("userName").innerHTML = "Welcome " + userName;
+        document.getElementById("userAge").innerHTML = "Your Age " + userAge;
+        document.getElementById("userFavMovie").innerHTML = "Your best Movie " + userFavMovie;
+        document.getElementById("userMobileKind").innerHTML = "Your Phone " + userMobileKind;
+
+</script>
+</body>
+
+</html>
